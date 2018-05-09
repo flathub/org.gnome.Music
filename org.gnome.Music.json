@@ -184,8 +184,8 @@
             "buildsystem": "meson",
             "sources": [{
                 "type": "archive",
-                "url": "https://download.gnome.org/sources/gnome-music/3.28/gnome-music-3.28.0.1.tar.xz",
-                "sha256": "c5ccbc529b556329e7ab43cb24830ff4cd717eaf8bc1c7913d26ccca7bd5de7b"
+                "url": "https://download.gnome.org/sources/gnome-music/3.28/gnome-music-3.28.2.1.tar.xz",
+                "sha256": "bbf4556b77a97d86b586eeb3015482d800c46bcd293adbda0438ca0871bc9b26"
 
             }]
         }
