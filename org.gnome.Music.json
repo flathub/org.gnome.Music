@@ -41,11 +41,13 @@
     ],
     "modules": [{
             "name": "libmediaart",
-            "sources": [{
-                "type": "archive",
-                "url": "https://download.gnome.org/sources/libmediaart/1.9/libmediaart-1.9.4.tar.xz",
-                "sha256": "a57be017257e4815389afe4f58fdacb6a50e74fd185452b23a652ee56b04813d"
-            }]
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://download.gnome.org/sources/libmediaart/1.9/libmediaart-1.9.4.tar.xz",
+                    "sha256": "a57be017257e4815389afe4f58fdacb6a50e74fd185452b23a652ee56b04813d"
+                }
+            ]
         },
         {
             "name": "tracker",
@@ -60,12 +62,13 @@
                 "--disable-tracker-writeback", "--disable-miner-user-guides",
                 "--with-bash-completion-dir=no"
             ],
-
-            "sources": [{
-                "type": "archive",
-                "url": "https://download.gnome.org/sources/tracker/2.0/tracker-2.0.3.tar.xz",
-                "sha256": "5a2fb274c128ec67a920944937b5147ceaf5db16fef6691ea22c4cb841e20580"
-            }]
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://download.gnome.org/sources/tracker/2.1/tracker-2.1.4.tar.xz",
+                    "sha256": "5d3f27da49d3e8ceafd2049b0fd5c3ff3ca43cda199c792652ce5ed3e847c575"
+                }
+            ]
         },
         {
             "name": "gnome-online-accounts",
@@ -75,22 +78,26 @@
                 "--disable-backend",
                 "--disable-Werror"
             ],
-            "sources": [{
-                "type": "archive",
-                "url": "https://download.gnome.org/sources/gnome-online-accounts/3.28/gnome-online-accounts-3.28.0.tar.xz",
-                "sha256": "87bc4ef307604f1ce4f09f6e5c9996ef8d37ca5e0a3bf76f6b27d71844adb40c"
-            }]
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://download.gnome.org/sources/gnome-online-accounts/3.30/gnome-online-accounts-3.30.0.tar.xz",
+                    "sha256": "27d9d88942aa02a1f8d003dfe515483d8483f216ba1e297a8ef67a42cf4bcfc3"
+                }
+            ]
         },
         {
             "name": "grilo",
             "config-opts": [
                 "--disable-static"
             ],
-            "sources": [{
-                "type": "archive",
-                "url": "https://download.gnome.org/sources/grilo/0.3/grilo-0.3.4.tar.xz",
-                "sha256": "7c6964053b42574c2f14715d2392a02ea5cbace955eb73e067c77aa3e43b066e"
-            }],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://download.gnome.org/sources/grilo/0.3/grilo-0.3.6.tar.xz",
+                    "sha256": "1e65ca82dd58020451417fde79310d4b940adc3f63ab59997419c52ed3bc9c91"
+                }
+            ],
             "cleanup": ["/include", "/bin"]
         },
         {
@@ -112,11 +119,13 @@
                 "--enable-freebox=no",
                 "--enable-opensubtitles=no"
             ],
-            "sources": [{
-                "type": "archive",
-                "url": "https://download.gnome.org/sources/grilo-plugins/0.3/grilo-plugins-0.3.5.tar.xz",
-                "sha256": "2977827b8ecb3e15535236180e57dc35e85058d111349bdb6a1597e62a5068fb"
-            }],
+            "sources": [
+                    {
+                    "type": "archive",
+                    "url": "https://download.gnome.org/sources/grilo-plugins/0.3/grilo-plugins-0.3.7.tar.xz",
+                    "sha256": "fc2f3bbc319136e53e1efb6659fa65b6af45db114b6621008f9abba64fad6820"
+                }
+            ],
             "cleanup": ["/include"]
         },
         {
@@ -125,11 +134,13 @@
             "build-commands": [
                 "python3 setup.py install --prefix=/app --root=/"
             ],
-            "sources": [{
-                "type": "archive",
-                "url": "https://github.com/shazow/urllib3/archive/1.22.tar.gz",
-                "sha256": "dd60d4104b871943e06be69e296e97ede9d42edf6ba534f0268aee932a601e2a"
-            }]
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://github.com/shazow/urllib3/archive/1.23.tar.gz",
+                    "sha256": "287c359d802e942ea55ce80710bcd9d5c08554b2c9dc3f52a56c77ce9f72451e"
+                }
+            ]
         },
         {
             "name": "chardet",
@@ -137,11 +148,13 @@
             "build-commands": [
                 "python3 setup.py install --prefix=/app --root=/"
             ],
-            "sources": [{
-                "type": "archive",
-                "url": "https://github.com/chardet/chardet/archive/3.0.4.tar.gz",
-                "sha256": "d5620025cfca430f6c2e28ddbc87c3c66a5c82fa65570ae975c92911c2190189"
-            }]
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://github.com/chardet/chardet/archive/3.0.4.tar.gz",
+                    "sha256": "d5620025cfca430f6c2e28ddbc87c3c66a5c82fa65570ae975c92911c2190189"
+                }
+            ]
         },
         {
             "name": "certifi",
@@ -149,11 +162,13 @@
             "build-commands": [
                 "python3 setup.py install --prefix=/app --root=/"
             ],
-            "sources": [{
-                "type": "archive",
-                "url": "https://github.com/certifi/python-certifi/archive/2018.01.18.tar.gz",
-                "sha256": "4912338503a14ff784f602177389e488a5814afa08db00425d175201fdbd6994"
-            }]
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://github.com/certifi/python-certifi/archive/2018.08.24.tar.gz",
+                    "sha256": "2635c4e69d7cffea4fb781e558b417c2336b96bd7b493ea107c62c502b818693"
+                }
+            ]
         },
         {
             "name": "idna",
@@ -161,11 +176,13 @@
             "build-commands": [
                 "python3 setup.py install --prefix=/app --root=/"
             ],
-            "sources": [{
-                "type": "archive",
-                "url": "https://github.com/kjd/idna/archive/v2.6.tar.gz",
-                "sha256": "53c722c4b7908dfdf2e5db2b79982f1084494db7b34fd31ff6a296e9fddfceaa"
-            }]
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://github.com/kjd/idna/archive/v2.7.tar.gz",
+                    "sha256": "2a1026d4532b1712819eec4447f8eb46639692570f31edb73e33286c888edbcc"
+                }
+            ]
         },
         {
             "name": "requests",
@@ -173,21 +190,40 @@
             "build-commands": [
                 "python3 setup.py install --prefix=${FLATPAK_DEST}"
             ],
-            "sources": [{
-                "type": "archive",
-                "url": "https://github.com/requests/requests/archive/v2.18.4.tar.gz",
-                "sha256": "b068ccce3b739a29cbf72148b0ff4be3d80198fb7cdbd63066f7384bb56ef917"
-            }]
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://github.com/requests/requests/archive/v2.19.1.tar.gz",
+                    "sha256": "a8383bcc6b15bcaf95c5034b5a05f1bf57a18625a4659e39a08a15fdb097a831"
+                }
+            ]
+        },
+        {
+            "name" : "libdazzle",
+            "config-opts" : [
+                "--libdir=/app/lib",
+                "--buildtype=release"
+            ],
+            "buildsystem" : "meson",
+            "builddir" : true,
+            "sources" : [
+                {
+                    "type" : "archive",
+                    "url" : "https://download.gnome.org/sources/libdazzle/3.30/libdazzle-3.30.0.tar.xz",
+                    "sha256" : "f45b7dd27ed798352196813c8e87d386007a939df7aca447f5a5666afc03be43"
+                }
+            ]
         },
         {
             "name": "gnome-music",
             "buildsystem": "meson",
-            "sources": [{
-                "type": "archive",
-                "url": "https://download.gnome.org/sources/gnome-music/3.28/gnome-music-3.28.2.1.tar.xz",
-                "sha256": "bbf4556b77a97d86b586eeb3015482d800c46bcd293adbda0438ca0871bc9b26"
-
-            }]
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://download.gnome.org/sources/gnome-music/3.30/gnome-music-3.30.0.tar.xz",
+                    "sha256": "1d38dd569ed0d27107769ac40b9be4cc75e08cf888d42e1250a0a4eec69a8955"
+                }
+            ]
         }
     ]
 }
