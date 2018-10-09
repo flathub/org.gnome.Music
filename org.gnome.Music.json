@@ -88,10 +88,11 @@
         },
         {
             "name": "grilo-plugins",
+            "buildsystem": "meson",
             "config-opts": [
-                "--enable-tracker",
-                "--enable-dleyna",
-                "--enable-goa",
+                "--enable-tracker=yes",
+                "--enable-dleyna=yes",
+                "--enable-goa=yes",
                 "--enable-filesystem=no",
                 "--enable-optical-media=no",
                 "--enable-youtube=no",
