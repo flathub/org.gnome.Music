@@ -168,7 +168,7 @@
             ],
             "sources": [{
                 "type": "archive",
-                "url": "https://github.com/requests/requests/releases/tag/v2.19.1",
+                "url": "https://github.com/requests/requests/archive/v2.19.1.tar.gz",
                 "sha256": "a8383bcc6b15bcaf95c5034b5a05f1bf57a18625a4659e39a08a15fdb097a831"
             }]
         },
