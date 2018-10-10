@@ -92,25 +92,10 @@
       ]
     },
     {
-      "name": "gmime",
-      "config-opts": [
-        "--disable-gtk-doc"
-      ],
-      "cleanup": [
-        "*.la",
-        "/share/gtk-doc"
-      ],
-      "sources": [
-        {
-          "type": "git",
-          "branch": "3.0.0",
-          "url": "https://git.gnome.org/browse/gmime",
-          "commit": "3fd646c95503acb0d11bf67afde1c7bdd4fcc341"
-        }
-      ]
-    },
-    {
       "name": "totem-pl-parser",
+      "config-opts": [
+          "-Ddisable-gmime-i-know-what-im-doing=true"
+      ],
       "buildsystem": "meson",
       "sources": [
         {
