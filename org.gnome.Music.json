@@ -17,6 +17,7 @@
         "--talk-name=org.gnome.SettingsDaemon.MediaKeys",
         "--talk-name=com.intel.dleyna-server",
         "--socket=pulseaudio",
+        "--talk-name=org.gtk.vfs.mountpoint_http",
         "--filesystem=xdg-music",
         "--filesystem=xdg-cache/media-art"
     ],
@@ -62,7 +63,8 @@
         },
         {
             "name": "gnome-online-accounts",
-            "config-opts": ["--enable-introspection",
+            "config-opts": [
+                "--enable-introspection",
                 "--disable-telepathy",
                 "--disable-documentation",
                 "--disable-backend",
@@ -73,6 +75,21 @@
                 "url": "https://download.gnome.org/sources/gnome-online-accounts/3.30/gnome-online-accounts-3.30.0.tar.xz",
                 "sha256": "27d9d88942aa02a1f8d003dfe515483d8483f216ba1e297a8ef67a42cf4bcfc3"
             }]
+        },  
+        {
+          "name": "totem-pl-parser",
+          "buildsystem": "meson",
+          "sources": [
+            {
+              "type": "archive",
+              "url": "https://download.gnome.org/sources/totem-pl-parser/3.26/totem-pl-parser-3.26.1.tar.xz",
+              "sha256": "6ae2c4b8acaf052af21b8db256b6314385de031ba721a2dbdb361e90d4b4b74c"
+            }
+          ],
+          "cleanup": [ 
+            "/include",
+            "/share/gtk-doc"
+          ]
         },
         {
             "name": "grilo",
@@ -90,21 +107,21 @@
             "name": "grilo-plugins",
             "buildsystem": "meson",
             "config-opts": [
-                "-Denable-tracker=yes",
                 "-Denable-dleyna=yes",
-                "-Denable-goa=yes",
-                "-Denable-filesystem=no",
-                "-Denable-optical-media=no",
-                "-Denable-youtube=no",
+                "-Denable-tracker=yes",
                 "-Denable-bookmarks=no",
-                "-Denable-lua-factory=no",
+                "-Denable-filesystem=no",
+                "-Denable-freebox=no",
+                "-Denable-local-metadata=no",
+                "-Denable-lua-factory=yes",
                 "-Denable-metadata-store=no",
-                "-Denable-vimeo=no",
-                "-Denable-localmetadata=no",
+                "-Denable-opensubtitles=no",
+                "-Denable-optical-media=no",
+                "-Denable-podcasts=no",
                 "-Denable-thetvdb=no",
                 "-Denable-tmdb=no",
-                "-Denable-freebox=no",
-                "-Denable-opensubtitles=no"
+                "-Denable-vimeo=no",
+                "-Denable-youtube=no"
             ],
             "sources": [{
                 "type": "archive",
@@ -114,69 +131,10 @@
             "cleanup": ["/include"]
         },
         {
-            "name": "urllib3",
-            "buildsystem": "simple",
-            "build-commands": [
-                "python3 setup.py install --prefix=/app --root=/"
-            ],
-            "sources": [{
-                "type": "archive",
-                "url": "https://github.com/urllib3/urllib3/archive/1.23.tar.gz",
-                "sha256": "287c359d802e942ea55ce80710bcd9d5c08554b2c9dc3f52a56c77ce9f72451e"
-            }]
-        },
-        {
-            "name": "chardet",
-            "buildsystem": "simple",
-            "build-commands": [
-                "python3 setup.py install --prefix=/app --root=/"
-            ],
-            "sources": [{
-                "type": "archive",
-                "url": "https://github.com/chardet/chardet/archive/3.0.4.tar.gz",
-                "sha256": "d5620025cfca430f6c2e28ddbc87c3c66a5c82fa65570ae975c92911c2190189"
-            }]
-        },
-        {
-            "name": "certifi",
-            "buildsystem": "simple",
-            "build-commands": [
-                "python3 setup.py install --prefix=/app --root=/"
-            ],
-            "sources": [{
-                "type": "archive",
-                "url": "https://github.com/certifi/python-certifi/archive/2018.08.24.tar.gz",
-                "sha256": "2635c4e69d7cffea4fb781e558b417c2336b96bd7b493ea107c62c502b818693"
-            }]
-        },
-        {
-            "name": "idna",
-            "buildsystem": "simple",
-            "build-commands": [
-                "python3 setup.py install --prefix=/app --root=/"
-            ],
-            "sources": [{
-                "type": "archive",
-                "url": "https://github.com/kjd/idna/archive/v2.7.tar.gz",
-                "sha256": "2a1026d4532b1712819eec4447f8eb46639692570f31edb73e33286c888edbcc"
-            }]
-        },
-        {
-            "name": "requests",
-            "buildsystem": "simple",
-            "build-commands": [
-                "python3 setup.py install --prefix=${FLATPAK_DEST}"
-            ],
-            "sources": [{
-                "type": "archive",
-                "url": "https://github.com/requests/requests/archive/v2.19.1.tar.gz",
-                "sha256": "a8383bcc6b15bcaf95c5034b5a05f1bf57a18625a4659e39a08a15fdb097a831"
-            }]
-        },
-        {
             "name": "libdazzle",
             "buildsystem": "meson",
             "config-opts": [
+                "--libdir=/app/lib",
                 "-Dwith_vapi=false"
             ],
             "sources": [{
