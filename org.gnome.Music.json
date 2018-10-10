@@ -1,200 +1,187 @@
 {
-    "app-id": "org.gnome.Music",
-    "runtime": "org.gnome.Platform",
-    "runtime-version": "3.30",
-    "sdk": "org.gnome.Sdk",
-    "command": "gnome-music",
-    "finish-args": [
-        "--share=ipc", "--socket=x11",
-        "--socket=wayland",
-        "--share=network",
-        "--talk-name=org.freedesktop.Tracker1",
-        "--env=TRACKER_SPARQL_BACKEND=bus",
-        "--talk-name=org.gnome.OnlineAccounts",
-        "--filesystem=xdg-run/dconf", "--filesystem=~/.config/dconf:ro",
-        "--talk-name=ca.desrt.dconf", "--env=DCONF_USER_CONFIG_DIR=.config/dconf",
-        "--own-name=org.mpris.MediaPlayer2.GnomeMusic",
-        "--talk-name=org.gnome.SettingsDaemon.MediaKeys",
-        "--talk-name=com.intel.dleyna-server",
-        "--socket=pulseaudio",
-        "--filesystem=xdg-music",
-        "--filesystem=xdg-cache/media-art"
-    ],
-    "cleanup": [
-        "/include",
-        "/lib/pkgconfig",
-        "/share/pkgconfig",
-        "/share/aclocal",
-        "/man",
-        "/share/man",
-        "/share/gtk-doc",
-        "/share/vala",
-        "*.la",
-        "*.a"
-    ],
-    "modules": [{
-            "name": "libmediaart",
-            "sources": [{
-                "type": "archive",
-                "url": "https://download.gnome.org/sources/libmediaart/1.9/libmediaart-1.9.4.tar.xz",
-                "sha256": "a57be017257e4815389afe4f58fdacb6a50e74fd185452b23a652ee56b04813d"
-            }]
-        },
+  "app-id": "org.gnome.Music",
+  "runtime": "org.gnome.Platform",
+  "runtime-version": "3.30",
+  "sdk": "org.gnome.Sdk",
+  "command": "gnome-music",
+  "finish-args": [
+    "--share=ipc",
+    "--socket=x11",
+    "--socket=wayland",
+    "--share=network",
+    "--talk-name=org.freedesktop.Tracker1",
+    "--env=TRACKER_SPARQL_BACKEND=bus",
+    "--talk-name=org.gnome.OnlineAccounts",
+    "--filesystem=xdg-run/dconf",
+    "--filesystem=~/.config/dconf:ro",
+    "--talk-name=ca.desrt.dconf",
+    "--env=DCONF_USER_CONFIG_DIR=.config/dconf",
+    "--own-name=org.mpris.MediaPlayer2.GnomeMusic",
+    "--talk-name=org.gnome.SettingsDaemon.MediaKeys",
+    "--talk-name=com.intel.dleyna-server",
+    "--socket=pulseaudio",
+    "--talk-name=org.gtk.vfs.mountpoint_http",
+    "--filesystem=xdg-music",
+    "--filesystem=xdg-cache/media-art"
+  ],
+  "cleanup": [
+    "/include",
+    "/lib/pkgconfig",
+    "/share/pkgconfig",
+    "/share/aclocal",
+    "/man",
+    "/share/man",
+    "/share/gtk-doc",
+    "/share/vala",
+    "*.la",
+    "*.a"
+  ],
+  "modules": [
+    "shared-modules/lua5.3/lua-5.3.2.json",
+    {
+      "name": "libmediaart",
+      "sources": [
         {
-            "name": "tracker",
-            "cleanup": [
-                "/bin",
-                "/etc",
-                "/libexec"
-            ],
-            "config-opts": ["--disable-miner-apps", "--disable-static",
-                "--disable-tracker-extract", "--disable-tracker-needle",
-                "--disable-tracker-preferences", "--disable-artwork",
-                "--disable-tracker-writeback", "--disable-miner-user-guides",
-                "--with-bash-completion-dir=no"
-            ],
-
-            "sources": [{
-                "type": "archive",
-                "url": "https://download.gnome.org/sources/tracker/2.1/tracker-2.1.5.tar.xz",
-                "sha256": "b234b7573773b904dc3e885ff5ec44e86b035767cde783bc50d65d12cd72861e"
-            }]
-        },
-        {
-            "name": "gnome-online-accounts",
-            "config-opts": ["--enable-introspection",
-                "--disable-telepathy",
-                "--disable-documentation",
-                "--disable-backend",
-                "--disable-Werror"
-            ],
-            "sources": [{
-                "type": "archive",
-                "url": "https://download.gnome.org/sources/gnome-online-accounts/3.30/gnome-online-accounts-3.30.0.tar.xz",
-                "sha256": "27d9d88942aa02a1f8d003dfe515483d8483f216ba1e297a8ef67a42cf4bcfc3"
-            }]
-        },
-        {
-            "name": "grilo",
-            "config-opts": [
-                "--disable-static"
-            ],
-            "sources": [{
-                "type": "archive",
-                "url": "https://download.gnome.org/sources/grilo/0.3/grilo-0.3.6.tar.xz",
-                "sha256": "1e65ca82dd58020451417fde79310d4b940adc3f63ab59997419c52ed3bc9c91"
-            }],
-            "cleanup": ["/include", "/bin"]
-        },
-        {
-            "name": "grilo-plugins",
-            "buildsystem": "meson",
-            "config-opts": [
-                "-Denable-tracker=yes",
-                "-Denable-dleyna=yes",
-                "-Denable-goa=yes",
-                "-Denable-filesystem=no",
-                "-Denable-optical-media=no",
-                "-Denable-youtube=no",
-                "-Denable-bookmarks=no",
-                "-Denable-lua-factory=no",
-                "-Denable-metadata-store=no",
-                "-Denable-vimeo=no",
-                "-Denable-localmetadata=no",
-                "-Denable-thetvdb=no",
-                "-Denable-tmdb=no",
-                "-Denable-freebox=no",
-                "-Denable-opensubtitles=no"
-            ],
-            "sources": [{
-                "type": "archive",
-                "url": "https://download.gnome.org/sources/grilo-plugins/0.3/grilo-plugins-0.3.8.tar.xz",
-                "sha256": "4cdd770b1554ee49cf77705401a35daa3ebff81badc05bd69d7240f50e60d65b"
-            }],
-            "cleanup": ["/include"]
-        },
-        {
-            "name": "urllib3",
-            "buildsystem": "simple",
-            "build-commands": [
-                "python3 setup.py install --prefix=/app --root=/"
-            ],
-            "sources": [{
-                "type": "archive",
-                "url": "https://github.com/urllib3/urllib3/archive/1.23.tar.gz",
-                "sha256": "287c359d802e942ea55ce80710bcd9d5c08554b2c9dc3f52a56c77ce9f72451e"
-            }]
-        },
-        {
-            "name": "chardet",
-            "buildsystem": "simple",
-            "build-commands": [
-                "python3 setup.py install --prefix=/app --root=/"
-            ],
-            "sources": [{
-                "type": "archive",
-                "url": "https://github.com/chardet/chardet/archive/3.0.4.tar.gz",
-                "sha256": "d5620025cfca430f6c2e28ddbc87c3c66a5c82fa65570ae975c92911c2190189"
-            }]
-        },
-        {
-            "name": "certifi",
-            "buildsystem": "simple",
-            "build-commands": [
-                "python3 setup.py install --prefix=/app --root=/"
-            ],
-            "sources": [{
-                "type": "archive",
-                "url": "https://github.com/certifi/python-certifi/archive/2018.08.24.tar.gz",
-                "sha256": "2635c4e69d7cffea4fb781e558b417c2336b96bd7b493ea107c62c502b818693"
-            }]
-        },
-        {
-            "name": "idna",
-            "buildsystem": "simple",
-            "build-commands": [
-                "python3 setup.py install --prefix=/app --root=/"
-            ],
-            "sources": [{
-                "type": "archive",
-                "url": "https://github.com/kjd/idna/archive/v2.7.tar.gz",
-                "sha256": "2a1026d4532b1712819eec4447f8eb46639692570f31edb73e33286c888edbcc"
-            }]
-        },
-        {
-            "name": "requests",
-            "buildsystem": "simple",
-            "build-commands": [
-                "python3 setup.py install --prefix=${FLATPAK_DEST}"
-            ],
-            "sources": [{
-                "type": "archive",
-                "url": "https://github.com/requests/requests/archive/v2.19.1.tar.gz",
-                "sha256": "a8383bcc6b15bcaf95c5034b5a05f1bf57a18625a4659e39a08a15fdb097a831"
-            }]
-        },
-        {
-            "name": "libdazzle",
-            "buildsystem": "meson",
-            "config-opts": [
-                "-Dwith_vapi=false"
-            ],
-            "sources": [{
-                "type": "archive",
-                "url": "https://download.gnome.org/sources/libdazzle/3.30/libdazzle-3.30.1.tar.xz",
-                "sha256": "dcc96520e76692aa442206c2bb5971fa28f1279290b7e520e4078ba603d41fb3"
-
-            }]
-        },
-        {
-            "name": "gnome-music",
-            "buildsystem": "meson",
-            "sources": [{
-                "type": "archive",
-                "url": "https://download.gnome.org/sources/gnome-music/3.30/gnome-music-3.30.1.tar.xz",
-                "sha256": "0415d832cb393f0378d5ce3858f78cd7028d5fe5b669dbaea4c280612c51a3d9"
-
-            }]
+          "type": "archive",
+          "url": "https://download.gnome.org/sources/libmediaart/1.9/libmediaart-1.9.4.tar.xz",
+          "sha256": "a57be017257e4815389afe4f58fdacb6a50e74fd185452b23a652ee56b04813d"
         }
-    ]
+      ]
+    },
+    {
+      "name": "tracker",
+      "cleanup": [
+        "/bin",
+        "/etc",
+        "/libexec"
+      ],
+      "config-opts": [
+        "--disable-miner-apps",
+        "--disable-static",
+        "--disable-tracker-extract",
+        "--disable-tracker-needle",
+        "--disable-tracker-preferences",
+        "--disable-artwork",
+        "--disable-tracker-writeback",
+        "--disable-miner-user-guides",
+        "--with-bash-completion-dir=no"
+      ],
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://download.gnome.org/sources/tracker/2.1/tracker-2.1.5.tar.xz",
+          "sha256": "b234b7573773b904dc3e885ff5ec44e86b035767cde783bc50d65d12cd72861e"
+        }
+      ]
+    },
+    {
+      "name": "gnome-online-accounts",
+      "config-opts": [
+        "--enable-introspection",
+        "--disable-telepathy",
+        "--disable-documentation",
+        "--disable-backend",
+        "--disable-Werror"
+      ],
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://download.gnome.org/sources/gnome-online-accounts/3.30/gnome-online-accounts-3.30.0.tar.xz",
+          "sha256": "27d9d88942aa02a1f8d003dfe515483d8483f216ba1e297a8ef67a42cf4bcfc3"
+        }
+      ]
+    },
+    {
+      "name": "totem-pl-parser",
+      "config-opts": [
+          "-Ddisable-gmime-i-know-what-im-doing=true"
+      ],
+      "buildsystem": "meson",
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://download.gnome.org/sources/totem-pl-parser/3.26/totem-pl-parser-3.26.1.tar.xz",
+          "sha256": "6ae2c4b8acaf052af21b8db256b6314385de031ba721a2dbdb361e90d4b4b74c"
+        }
+      ],
+      "cleanup": [
+        "/include",
+        "/share/gtk-doc"
+      ]
+    },
+    {
+      "name": "grilo",
+      "config-opts": [
+        "--disable-static"
+      ],
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://download.gnome.org/sources/grilo/0.3/grilo-0.3.6.tar.xz",
+          "sha256": "1e65ca82dd58020451417fde79310d4b940adc3f63ab59997419c52ed3bc9c91"
+        }
+      ],
+      "cleanup": [
+        "/include",
+        "/bin"
+      ]
+    },
+    {
+      "name": "grilo-plugins",
+      "buildsystem": "meson",
+      "config-opts": [
+        "-Denable-dleyna=yes",
+        "-Denable-tracker=yes",
+        "-Denable-bookmarks=no",
+        "-Denable-filesystem=no",
+        "-Denable-freebox=no",
+        "-Denable-local-metadata=no",
+        "-Denable-lua-factory=yes",
+        "-Denable-metadata-store=no",
+        "-Denable-opensubtitles=no",
+        "-Denable-optical-media=no",
+        "-Denable-podcasts=no",
+        "-Denable-thetvdb=no",
+        "-Denable-tmdb=no",
+        "-Denable-vimeo=no",
+        "-Denable-youtube=no"
+      ],
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://download.gnome.org/sources/grilo-plugins/0.3/grilo-plugins-0.3.8.tar.xz",
+          "sha256": "4cdd770b1554ee49cf77705401a35daa3ebff81badc05bd69d7240f50e60d65b"
+        }
+      ],
+      "cleanup": [
+        "/include"
+      ]
+    },
+    {
+      "name": "libdazzle",
+      "buildsystem": "meson",
+      "config-opts": [
+        "--libdir=/app/lib",
+        "-Dwith_vapi=false"
+      ],
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://download.gnome.org/sources/libdazzle/3.30/libdazzle-3.30.1.tar.xz",
+          "sha256": "dcc96520e76692aa442206c2bb5971fa28f1279290b7e520e4078ba603d41fb3"
+        }
+      ]
+    },
+    {
+      "name": "gnome-music",
+      "buildsystem": "meson",
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://download.gnome.org/sources/gnome-music/3.30/gnome-music-3.30.1.tar.xz",
+          "sha256": "0415d832cb393f0378d5ce3858f78cd7028d5fe5b669dbaea4c280612c51a3d9"
+        }
+      ]
+    }
+  ]
 }
