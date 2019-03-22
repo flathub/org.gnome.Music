@@ -1,7 +1,7 @@
 {
   "app-id": "org.gnome.Music",
   "runtime": "org.gnome.Platform",
-  "runtime-version": "3.30",
+  "runtime-version": "3.32",
   "sdk": "org.gnome.Sdk",
   "command": "gnome-music",
   "finish-args": [
@@ -22,7 +22,8 @@
     "--socket=pulseaudio",
     "--talk-name=org.gtk.vfs.mountpoint_http",
     "--filesystem=xdg-music",
-    "--filesystem=xdg-cache/media-art"
+    "--filesystem=xdg-cache/media-art",
+    "--system-talk-name=org.freedesktop.login1"
   ],
   "cleanup": [
     "/include",
@@ -49,28 +50,40 @@
       ]
     },
     {
+      "name": "libdazzle",
+      "buildsystem": "meson",
+      "config-opts": [
+        "-Dwith_vapi=false"
+      ],
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://download.gnome.org/sources/libdazzle/3.32/libdazzle-3.32.0.tar.xz",
+          "sha256": "949ed80bcef8a7816a8f281e0c4389e654a1dfa1912226fe4a0d290e023b28d6"
+        }
+      ]
+    },
+    {
       "name": "tracker",
+      "buildsystem": "meson",
       "cleanup": [
         "/bin",
         "/etc",
         "/libexec"
       ],
       "config-opts": [
-        "--disable-miner-apps",
-        "--disable-static",
-        "--disable-tracker-extract",
-        "--disable-tracker-needle",
-        "--disable-tracker-preferences",
-        "--disable-artwork",
-        "--disable-tracker-writeback",
-        "--disable-miner-user-guides",
-        "--with-bash-completion-dir=no"
+        "-Ddocs=false",
+        "-Dfunctional_tests=false",
+        "-Dnetwork_manager=disabled",
+        "-Dstemmer=disabled",
+        "-Dunicode_support=icu",
+        "-Dbash_completion=no"
       ],
       "sources": [
         {
           "type": "archive",
-          "url": "https://download.gnome.org/sources/tracker/2.1/tracker-2.1.5.tar.xz",
-          "sha256": "b234b7573773b904dc3e885ff5ec44e86b035767cde783bc50d65d12cd72861e"
+          "url": "https://download.gnome.org/sources/tracker/2.2/tracker-2.2.1.tar.xz",
+          "sha256": "0ccef9e67440859119fa6cae230355c1b1b3485ac08122017c9499ad2dada2ff"
         }
       ]
     },
@@ -86,8 +99,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://download.gnome.org/sources/gnome-online-accounts/3.30/gnome-online-accounts-3.30.0.tar.xz",
-          "sha256": "27d9d88942aa02a1f8d003dfe515483d8483f216ba1e297a8ef67a42cf4bcfc3"
+          "url": "https://download.gnome.org/sources/gnome-online-accounts/3.30/gnome-online-accounts-3.30.2.tar.xz",
+          "sha256": "05c7e588c884a4145db376880303588f74b76d1fa11afbeccb74c6eff36b2fdc"
         }
       ]
     },
@@ -100,8 +113,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://download.gnome.org/sources/totem-pl-parser/3.26/totem-pl-parser-3.26.1.tar.xz",
-          "sha256": "6ae2c4b8acaf052af21b8db256b6314385de031ba721a2dbdb361e90d4b4b74c"
+          "url": "https://download.gnome.org/sources/totem-pl-parser/3.26/totem-pl-parser-3.26.3.tar.xz",
+          "sha256": "0efd01b8a0a9770d52fe7354d298874ed845449b88f3f78f49290729fc2d448d"
         }
       ],
       "cleanup": [
@@ -111,18 +124,12 @@
     },
     {
       "name": "grilo",
-      "config-opts": [
-        "--disable-static"
-      ],
+      "buildsystem": "meson",
       "sources": [
         {
           "type": "archive",
-          "url": "https://download.gnome.org/sources/grilo/0.3/grilo-0.3.6.tar.xz",
-          "sha256": "1e65ca82dd58020451417fde79310d4b940adc3f63ab59997419c52ed3bc9c91"
-        },
-        {
-          "type": "patch",
-          "path": "grilo-startup-crasher.patch"
+          "url": "https://download.gnome.org/sources/grilo/0.3/grilo-0.3.7.tar.xz",
+          "sha256": "ea3baf71692df177649a968635ed2bc39855c34c327274245c240f726831e9b7"
         }
       ],
       "cleanup": [
@@ -162,28 +169,13 @@
       ]
     },
     {
-      "name": "libdazzle",
-      "buildsystem": "meson",
-      "config-opts": [
-        "--libdir=/app/lib",
-        "-Dwith_vapi=false"
-      ],
-      "sources": [
-        {
-          "type": "archive",
-          "url": "https://download.gnome.org/sources/libdazzle/3.30/libdazzle-3.30.1.tar.xz",
-          "sha256": "dcc96520e76692aa442206c2bb5971fa28f1279290b7e520e4078ba603d41fb3"
-        }
-      ]
-    },
-    {
       "name": "gnome-music",
       "buildsystem": "meson",
       "sources": [
         {
           "type": "archive",
-          "url": "https://download.gnome.org/sources/gnome-music/3.30/gnome-music-3.30.1.tar.xz",
-          "sha256": "0415d832cb393f0378d5ce3858f78cd7028d5fe5b669dbaea4c280612c51a3d9"
+          "url": "https://download.gnome.org/sources/gnome-music/3.32/gnome-music-3.32.0.tar.xz",
+          "sha256": "c7cfeffed17c5584c9dc0e92b2f9722d54bd236b7c1bf52437d01a138947b81c"
         }
       ]
     }
