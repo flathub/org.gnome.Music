@@ -1,29 +1,25 @@
 {
   "app-id": "org.gnome.Music",
   "runtime": "org.gnome.Platform",
-  "runtime-version": "3.32",
+  "runtime-version": "3.34",
   "sdk": "org.gnome.Sdk",
   "command": "gnome-music",
   "finish-args": [
-    "--share=ipc",
-    "--socket=x11",
-    "--socket=wayland",
+    "--share=ipc", "--socket=x11",
     "--share=network",
+    "--socket=wayland",
     "--talk-name=org.freedesktop.Tracker1",
     "--env=TRACKER_SPARQL_BACKEND=bus",
     "--talk-name=org.gnome.OnlineAccounts",
-    "--filesystem=xdg-run/dconf",
-    "--filesystem=~/.config/dconf:ro",
-    "--talk-name=ca.desrt.dconf",
-    "--env=DCONF_USER_CONFIG_DIR=.config/dconf",
     "--own-name=org.mpris.MediaPlayer2.GnomeMusic",
     "--talk-name=org.gnome.SettingsDaemon.MediaKeys",
     "--talk-name=com.intel.dleyna-server",
+    "--talk-name=org.gtk.vfs",
+    "--talk-name=org.gtk.vfs.*",
     "--socket=pulseaudio",
-    "--talk-name=org.gtk.vfs.mountpoint_http",
     "--filesystem=xdg-music",
-    "--filesystem=xdg-cache/media-art",
-    "--system-talk-name=org.freedesktop.login1"
+    "--system-talk-name=org.freedesktop.login1",
+    "--metadata=X-DConf=migrate-path=/org/gnome/Music/"
   ],
   "cleanup": [
     "/include",
@@ -58,8 +54,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://download.gnome.org/sources/libdazzle/3.32/libdazzle-3.32.0.tar.xz",
-          "sha256": "949ed80bcef8a7816a8f281e0c4389e654a1dfa1912226fe4a0d290e023b28d6"
+          "url": "https://download.gnome.org/sources/libdazzle/3.34/libdazzle-3.34.0.tar.xz",
+          "sha256": "8d8524bcb2acd6bda0fb3efe96f0bf3e8860ca18eed1fc55dc1c27756b49637c"
         }
       ]
     },
@@ -82,8 +78,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://download.gnome.org/sources/tracker/2.2/tracker-2.2.1.tar.xz",
-          "sha256": "0ccef9e67440859119fa6cae230355c1b1b3485ac08122017c9499ad2dada2ff"
+          "url": "https://download.gnome.org/sources/tracker/2.3/tracker-2.3.0.tar.xz",
+          "sha256": "2c04534da83419b0bc65216e367da51a420f52bb8449f4cc4542c651e5c6bf7b"
         }
       ]
     },
@@ -99,8 +95,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://download.gnome.org/sources/gnome-online-accounts/3.30/gnome-online-accounts-3.30.2.tar.xz",
-          "sha256": "05c7e588c884a4145db376880303588f74b76d1fa11afbeccb74c6eff36b2fdc"
+          "url": "https://download.gnome.org/sources/gnome-online-accounts/3.34/gnome-online-accounts-3.34.0.tar.xz",
+          "sha256": "c44fbce4eeb54703a2ab4954d54f11eb29666f9cf61b5275b9fe0fc033377f57"
         }
       ]
     },
@@ -128,8 +124,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://download.gnome.org/sources/grilo/0.3/grilo-0.3.7.tar.xz",
-          "sha256": "ea3baf71692df177649a968635ed2bc39855c34c327274245c240f726831e9b7"
+          "url": "https://download.gnome.org/sources/grilo/0.3/grilo-0.3.10.tar.xz",
+          "sha256": "7e44b2e74c31ed24eb97e43265a9e41effe8660287b02295111805c7bda7f1e8"
         }
       ],
       "cleanup": [
@@ -160,8 +156,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://download.gnome.org/sources/grilo-plugins/0.3/grilo-plugins-0.3.8.tar.xz",
-          "sha256": "4cdd770b1554ee49cf77705401a35daa3ebff81badc05bd69d7240f50e60d65b"
+          "url": "https://download.gnome.org/sources/grilo-plugins/0.3/grilo-plugins-0.3.10.tar.xz",
+          "sha256": "803b360fdb6d5fde1e647bdc40c16de3031b1a95b347b48b65fe4fc27a548d4a"
         }
       ],
       "cleanup": [
@@ -174,8 +170,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://download.gnome.org/sources/gnome-music/3.32/gnome-music-3.32.0.tar.xz",
-          "sha256": "c7cfeffed17c5584c9dc0e92b2f9722d54bd236b7c1bf52437d01a138947b81c"
+          "url": "https://download.gnome.org/sources/gnome-music/3.34/gnome-music-3.34.0.tar.xz",
+          "sha256": "a4ffba815a4d15f6be99f3e3adce9e2233c44d0cb07d2c44759421d05d34a6a8"
         }
       ]
     }
