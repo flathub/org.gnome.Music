@@ -54,8 +54,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://download.gnome.org/sources/libdazzle/3.34/libdazzle-3.34.0.tar.xz",
-          "sha256": "8d8524bcb2acd6bda0fb3efe96f0bf3e8860ca18eed1fc55dc1c27756b49637c"
+          "url": "https://download.gnome.org/sources/libdazzle/3.34/libdazzle-3.34.1.tar.xz",
+          "sha256": "3d981cbb9d9bb87bfaff7bfd44d9847223b3ef81e69225e4d1f6ac725a669505"
         }
       ]
     },
@@ -78,8 +78,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://download.gnome.org/sources/tracker/2.3/tracker-2.3.0.tar.xz",
-          "sha256": "2c04534da83419b0bc65216e367da51a420f52bb8449f4cc4542c651e5c6bf7b"
+          "url": "https://download.gnome.org/sources/tracker/2.3/tracker-2.3.1.tar.xz",
+          "sha256": "b6748726e465ad2f4d991560634b1fd0df8841f3d981b3b837c4162abedf08a1"
         }
       ]
     },
@@ -95,8 +95,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://download.gnome.org/sources/gnome-online-accounts/3.34/gnome-online-accounts-3.34.0.tar.xz",
-          "sha256": "c44fbce4eeb54703a2ab4954d54f11eb29666f9cf61b5275b9fe0fc033377f57"
+          "url": "https://download.gnome.org/sources/gnome-online-accounts/3.34/gnome-online-accounts-3.34.1.tar.xz",
+          "sha256": "4832ca8e48d3a497fc676e7b6f146009ab4206995362977b9805aa39f164783a"
         }
       ]
     },
@@ -170,8 +170,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://download.gnome.org/sources/gnome-music/3.34/gnome-music-3.34.0.tar.xz",
-          "sha256": "a4ffba815a4d15f6be99f3e3adce9e2233c44d0cb07d2c44759421d05d34a6a8"
+          "url": "https://download.gnome.org/sources/gnome-music/3.34/gnome-music-3.34.1.tar.xz",
+          "sha256": "296d6cf584b64f2b42ce6b95cf5cfb2920c713c40e52fb54722c3a1065cc0f89"
         }
       ]
     }
