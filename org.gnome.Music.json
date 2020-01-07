@@ -170,8 +170,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://download.gnome.org/sources/gnome-music/3.34/gnome-music-3.34.2.tar.xz",
-          "sha256": "b94901b052fdf641d653bf875e01ecdba07999c8f26cf7702bcbc4319b45a2a5"
+          "url": "https://download.gnome.org/sources/gnome-music/3.34/gnome-music-3.34.3.tar.xz",
+          "sha256": "e711bbea776b8deb8cc7a8884fe9239a7a786e223c362764c20a2d88a8c9e74e"
         }
       ]
     }
