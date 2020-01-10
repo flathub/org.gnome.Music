@@ -109,8 +109,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://download.gnome.org/sources/totem-pl-parser/3.26/totem-pl-parser-3.26.3.tar.xz",
-          "sha256": "0efd01b8a0a9770d52fe7354d298874ed845449b88f3f78f49290729fc2d448d"
+          "url": "https://download.gnome.org/sources/totem-pl-parser/3.26/totem-pl-parser-3.26.4.tar.xz",
+          "sha256": "c1576f551a67c2b3632a3dbea5d8b3e9966558af0cfeed58f07cec04728364f0"
         }
       ],
       "cleanup": [
@@ -124,8 +124,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://download.gnome.org/sources/grilo/0.3/grilo-0.3.10.tar.xz",
-          "sha256": "7e44b2e74c31ed24eb97e43265a9e41effe8660287b02295111805c7bda7f1e8"
+          "url": "https://download.gnome.org/sources/grilo/0.3/grilo-0.3.11.tar.xz",
+          "sha256": "0f911c0cb5a2f1c3e71215028553cfd6937bed4df88042452f276ebf2c28eb68"
         }
       ],
       "cleanup": [
