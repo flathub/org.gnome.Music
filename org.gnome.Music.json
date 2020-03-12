@@ -1,7 +1,7 @@
 {
   "app-id": "org.gnome.Music",
   "runtime": "org.gnome.Platform",
-  "runtime-version": "3.34",
+  "runtime-version": "3.36",
   "sdk": "org.gnome.Sdk",
   "command": "gnome-music",
   "finish-args": [
@@ -53,8 +53,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://download.gnome.org/sources/libdazzle/3.34/libdazzle-3.34.1.tar.xz",
-          "sha256": "3d981cbb9d9bb87bfaff7bfd44d9847223b3ef81e69225e4d1f6ac725a669505"
+          "url": "https://download.gnome.org/sources/libdazzle/3.36/libdazzle-3.36.0.tar.xz",
+          "sha256": "82b31bbf550fc62970c78bf7f9d55e5fae5b8ea13b24fe2d13c8c6039409d958"
         }
       ]
     },
@@ -77,8 +77,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://download.gnome.org/sources/tracker/2.3/tracker-2.3.2.tar.xz",
-          "sha256": "a4782b8ec7e4ee50f8f53865b24c5489823337fa94f785a7d9d34ccdf9b6ebdb"
+          "url": "https://download.gnome.org/sources/tracker/2.3/tracker-2.3.4.tar.xz",
+          "sha256": "577952244ab977c78b0b88e2f63c4197eaba16e4d66bff692b7f58993e06516d"
         }
       ]
     },
@@ -94,8 +94,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://download.gnome.org/sources/gnome-online-accounts/3.34/gnome-online-accounts-3.34.1.tar.xz",
-          "sha256": "4832ca8e48d3a497fc676e7b6f146009ab4206995362977b9805aa39f164783a"
+          "url": "https://download.gnome.org/sources/gnome-online-accounts/3.36/gnome-online-accounts-3.36.0.tar.xz",
+          "sha256": "1c8f62990833ca41188dbb80c5e99d99b57a62608ca675bbcd37bc2244742f2e"
         }
       ]
     },
@@ -108,8 +108,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://download.gnome.org/sources/totem-pl-parser/3.26/totem-pl-parser-3.26.4.tar.xz",
-          "sha256": "c1576f551a67c2b3632a3dbea5d8b3e9966558af0cfeed58f07cec04728364f0"
+          "url": "https://download.gnome.org/sources/totem-pl-parser/3.26/totem-pl-parser-3.26.5.tar.xz",
+          "sha256": "5370de46f2e848221779275479b96ac39115b1efd2b0293d4afa87e22c8c528c"
         }
       ],
       "cleanup": [
@@ -169,8 +169,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://download.gnome.org/sources/gnome-music/3.34/gnome-music-3.34.4.tar.xz",
-          "sha256": "66f5248ea504e818ca8a21de2721dd42e9b1a8961a2adee5c57836278b5352d0"
+          "url": "https://download.gnome.org/sources/gnome-music/3.36/gnome-music-3.36.0.tar.xz",
+          "sha256": "30fd4720d27fb6ad1026afa04c66e48356a59757fb74c562dda896b694627207"
         }
       ]
     }
