@@ -1,7 +1,7 @@
 {
   "app-id": "org.gnome.Music",
   "runtime": "org.gnome.Platform",
-  "runtime-version": "3.34",
+  "runtime-version": "3.36",
   "sdk": "org.gnome.Sdk",
   "command": "gnome-music",
   "finish-args": [
@@ -169,8 +169,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://download.gnome.org/sources/gnome-music/3.34/gnome-music-3.34.4.tar.xz",
-          "sha256": "66f5248ea504e818ca8a21de2721dd42e9b1a8961a2adee5c57836278b5352d0"
+          "url": "https://download.gnome.org/sources/gnome-music/3.36/gnome-music-3.36.0.tar.xz",
+          "sha256": "30fd4720d27fb6ad1026afa04c66e48356a59757fb74c562dda896b694627207"
         }
       ]
     }
