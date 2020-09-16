@@ -45,6 +45,20 @@
       ]
     },
     {
+      "name": "gst-python",
+      "buildsystem": "meson",
+      "config-opts": [
+            "-Dpygi-overrides-dir=/app/lib/python3.8/site-packages/gi/overrides/"
+      ],
+      "sources": [
+        {
+          "type": "git",
+          "branch": "1.16.2",
+          "url": "https://gitlab.freedesktop.org/gstreamer/gst-python.git"
+        }
+      ]
+    },
+    {
       "name": "libdazzle",
       "buildsystem": "meson",
       "config-opts": [
