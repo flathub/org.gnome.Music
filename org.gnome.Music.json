@@ -56,6 +56,10 @@
           "type": "git",
           "branch": "1.16.2",
           "url": "https://gitlab.freedesktop.org/gstreamer/gst-python.git"
+        },
+        {
+          "type": "patch",
+          "path": "gst-python.patch"
         }
       ]
     },
