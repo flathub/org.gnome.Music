@@ -5,7 +5,7 @@
   "sdk": "org.gnome.Sdk",
   "command": "gnome-music",
   "finish-args": [
-    "--share=ipc", "--socket=x11",
+    "--share=ipc", "--socket=fallback-x11",
     "--share=network",
     "--socket=wayland",
     "--talk-name=org.freedesktop.Tracker1",
