@@ -108,8 +108,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://download.gnome.org/sources/gnome-online-accounts/3.36/gnome-online-accounts-3.36.0.tar.xz",
-          "sha256": "1c8f62990833ca41188dbb80c5e99d99b57a62608ca675bbcd37bc2244742f2e"
+          "url": "https://download.gnome.org/sources/gnome-online-accounts/3.36/gnome-online-accounts-3.38.0.tar.xz",
+          "sha256": "3760ea78729b3038dda0c416b57bc2cbaafcc619eec6c5109654d747fad2418c"
         }
       ]
     },
@@ -184,8 +184,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://download.gnome.org/sources/gnome-music/3.38/gnome-music-3.38.0.tar.xz",
-          "sha256": "370aa97ee4610d11b4b8f691e5c9ce30fa55665870bf6d5f2319658bdfacd705"
+          "url": "https://download.gnome.org/sources/gnome-music/3.38/gnome-music-3.38.2.tar.xz",
+          "sha256": "5585b638564cfa1c7d9ebdc72d8c4d8544c6b09f65af425dcc72b86779284030"
         }
       ]
     }
