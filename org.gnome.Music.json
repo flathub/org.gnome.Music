@@ -107,8 +107,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://download.gnome.org/sources/gnome-online-accounts/3.36/gnome-online-accounts-3.38.0.tar.xz",
-          "sha256": "3760ea78729b3038dda0c416b57bc2cbaafcc619eec6c5109654d747fad2418c"
+          "url": "https://download.gnome.org/sources/gnome-online-accounts/3.38/gnome-online-accounts-3.38.1.tar.xz",
+          "sha256": "e18889d67806da84d1261bfed1cf61d2baec131d2d0d0a92f83ff33d4649358e"
         }
       ]
     },
