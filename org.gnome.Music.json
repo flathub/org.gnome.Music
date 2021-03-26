@@ -90,8 +90,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://download.gnome.org/sources/tracker-miners/3.0/tracker-miners-3.0.1.tar.xz",
-          "sha256": "c6fef0a15ef5d31cc0d3041cfdcb1ca5497e6b984649bb20121d33764d2bd1cd"
+          "url": "https://download.gnome.org/sources/tracker-miners/3.1/tracker-miners-3.1.0.tar.xz",
+          "sha256": "695885f7044042b6b53e2ae3f824de36f298c2197de12d171977157771646d00"
         }
       ]
     },
