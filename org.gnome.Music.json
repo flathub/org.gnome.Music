@@ -10,7 +10,6 @@
     "--socket=wayland",
     "--talk-name=org.gnome.OnlineAccounts",
     "--talk-name=org.gnome.ControlCenter",
-    "--own-name=org.mpris.MediaPlayer2.GnomeMusic",
     "--talk-name=org.freedesktop.Tracker3.Writeback",
     "--talk-name=org.gnome.SettingsDaemon.MediaKeys",
     "--talk-name=org.gtk.vfs",
