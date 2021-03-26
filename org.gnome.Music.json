@@ -1,7 +1,7 @@
 {
   "app-id": "org.gnome.Music",
   "runtime": "org.gnome.Platform",
-  "runtime-version": "3.38",
+  "runtime-version": "40",
   "sdk": "org.gnome.Sdk",
   "command": "gnome-music",
   "finish-args": [
@@ -10,7 +10,6 @@
     "--socket=wayland",
     "--talk-name=org.gnome.OnlineAccounts",
     "--talk-name=org.gnome.ControlCenter",
-    "--own-name=org.mpris.MediaPlayer2.GnomeMusic",
     "--talk-name=org.freedesktop.Tracker3.Writeback",
     "--talk-name=org.gnome.SettingsDaemon.MediaKeys",
     "--talk-name=org.gtk.vfs",
@@ -72,8 +71,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://download.gnome.org/sources/libdazzle/3.38/libdazzle-3.38.0.tar.xz",
-          "sha256": "e18af28217943bcec106585298a91ec3da48aa3ad62fd0992f23f0c70cd1678f"
+          "url": "https://download.gnome.org/sources/libdazzle/3.40/libdazzle-3.40.0.tar.xz",
+          "sha256": "dba99a7e65fa6662c012b306e5d0f99ff3b466a46059ea7aa0104aaf65ce4ba5"
         }
       ]
     },
@@ -91,8 +90,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://download.gnome.org/sources/tracker-miners/3.0/tracker-miners-3.0.1.tar.xz",
-          "sha256": "c6fef0a15ef5d31cc0d3041cfdcb1ca5497e6b984649bb20121d33764d2bd1cd"
+          "url": "https://download.gnome.org/sources/tracker-miners/3.1/tracker-miners-3.1.0.tar.xz",
+          "sha256": "695885f7044042b6b53e2ae3f824de36f298c2197de12d171977157771646d00"
         }
       ]
     },
@@ -108,8 +107,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://download.gnome.org/sources/gnome-online-accounts/3.36/gnome-online-accounts-3.38.0.tar.xz",
-          "sha256": "3760ea78729b3038dda0c416b57bc2cbaafcc619eec6c5109654d747fad2418c"
+          "url": "https://download.gnome.org/sources/gnome-online-accounts/3.38/gnome-online-accounts-3.38.1.tar.xz",
+          "sha256": "e18889d67806da84d1261bfed1cf61d2baec131d2d0d0a92f83ff33d4649358e"
         }
       ]
     },
@@ -184,8 +183,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://download.gnome.org/sources/gnome-music/3.38/gnome-music-3.38.2.tar.xz",
-          "sha256": "5585b638564cfa1c7d9ebdc72d8c4d8544c6b09f65af425dcc72b86779284030"
+          "url": "https://download.gnome.org/sources/gnome-music/40/gnome-music-40.0.tar.xz",
+          "sha256": "68e09b2cdb0115c30d130e14b2afc561dbf5248f50760e4519733326498358b6"
         }
       ]
     }
