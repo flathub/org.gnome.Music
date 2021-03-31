@@ -163,14 +163,14 @@
         "-Denable-podcasts=no",
         "-Denable-thetvdb=no",
         "-Denable-tmdb=no",
-        "-Denable-vimeo=no",
-        "-Denable-youtube=no"
+        "-Denable-youtube=no",
+        "-Dhelp=no"
       ],
       "sources": [
         {
           "type": "archive",
-          "url": "https://download.gnome.org/sources/grilo-plugins/0.3/grilo-plugins-0.3.12.tar.xz",
-          "sha256": "c6b6df086a164d65c206d70139ce80591f8feca3545612e45b823fb4fe4b2577"
+          "url": "https://download.gnome.org/sources/grilo-plugins/0.3/grilo-plugins-0.3.13.tar.xz",
+          "sha256": "1c4305d67364a930543836cc1982f30e946973b8ff6af3efe31d87709ab520f8"
         }
       ],
       "cleanup": [
