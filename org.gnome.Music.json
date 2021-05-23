@@ -12,8 +12,6 @@
     "--talk-name=org.gnome.ControlCenter",
     "--talk-name=org.freedesktop.Tracker3.Writeback",
     "--talk-name=org.gnome.SettingsDaemon.MediaKeys",
-    "--talk-name=org.gtk.vfs",
-    "--talk-name=org.gtk.vfs.*",
     "--socket=pulseaudio",
     "--filesystem=xdg-music",
     "--system-talk-name=org.freedesktop.login1",
