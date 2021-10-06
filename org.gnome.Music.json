@@ -135,8 +135,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://download.gnome.org/sources/grilo/0.3/grilo-0.3.13.tar.xz",
-          "sha256": "d14837f22341943ed8a189d9f0827a17016b802d18d0ed080e1413de0fdc927b"
+          "url": "https://download.gnome.org/sources/grilo/0.3/grilo-0.3.14.tar.xz",
+          "sha256": "0369d0b00bb0f59ba5f7aea8cfc665f38df14a5b4182d28c7c1e2cd15b518743"
         }
       ],
       "cleanup": [
@@ -168,8 +168,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://download.gnome.org/sources/grilo-plugins/0.3/grilo-plugins-0.3.13.tar.xz",
-          "sha256": "1c4305d67364a930543836cc1982f30e946973b8ff6af3efe31d87709ab520f8"
+          "url": "https://download.gnome.org/sources/grilo-plugins/0.3/grilo-plugins-0.3.14.tar.xz",
+          "sha256": "686844b34ec73b24931ff6cc4f6033f0072947a6db60acdc7fb3eaf157a581c8"
         }
       ],
       "cleanup": [
