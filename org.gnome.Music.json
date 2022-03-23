@@ -1,17 +1,17 @@
 {
   "app-id": "org.gnome.Music",
   "runtime": "org.gnome.Platform",
-  "runtime-version": "41",
+  "runtime-version": "42",
   "sdk": "org.gnome.Sdk",
   "command": "gnome-music",
   "finish-args": [
+    "--device=dri",
     "--share=ipc", "--socket=fallback-x11",
     "--share=network",
     "--socket=wayland",
     "--talk-name=org.gnome.OnlineAccounts",
     "--talk-name=org.gnome.ControlCenter",
     "--talk-name=org.freedesktop.Tracker3.Writeback",
-    "--talk-name=org.gnome.SettingsDaemon.MediaKeys",
     "--socket=pulseaudio",
     "--filesystem=xdg-music",
     "--system-talk-name=org.freedesktop.login1",
@@ -62,20 +62,6 @@
       ]
     },
     {
-      "name": "libdazzle",
-      "buildsystem": "meson",
-      "config-opts": [
-        "-Dwith_vapi=false"
-      ],
-      "sources": [
-        {
-          "type": "archive",
-          "url": "https://download-fallback.gnome.org/sources/libdazzle/3.42/libdazzle-3.42.0.tar.xz",
-          "sha256": "eae67a3b3d9cce408ee9ec0ab6adecb83e52eb53f9bc93713f4df1e84da16925"
-        }
-      ]
-    },
-    {
       "name": "tracker-miners",
       "buildsystem": "meson",
       "config-opts": [ "-Ddefault_index_single_dirs=",
@@ -89,8 +75,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://download.gnome.org/sources/tracker-miners/3.2/tracker-miners-3.2.0.tar.xz",
-          "sha256": "062f82dd548a62aec85105850113ac901a622bc51c6cfc632056365e87f81981"
+          "url": "https://download.gnome.org/sources/tracker-miners/3.3/tracker-miners-3.3.0.tar.xz",
+          "sha256": "8b387debb774061c06adfb267a0e0e0f3d21799371bf01d056495ab9b8dd9417"
         }
       ]
     },
@@ -106,8 +92,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://download.gnome.org/sources/gnome-online-accounts/3.40/gnome-online-accounts-3.40.0.tar.xz",
-          "sha256": "585c4f979f6f543b77bfdb4fb01eb18ba25c2aec5b7866c676d929616fb2c3fa"
+          "url": "https://download.gnome.org/sources/gnome-online-accounts/3.40/gnome-online-accounts-3.40.1.tar.xz",
+          "sha256": "955a03128d0e87855d34d7c534e088f6286ed7ac01baa4ef824ef42a2cb39aad"
         }
       ]
     },
@@ -182,8 +168,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://download.gnome.org/sources/gnome-music/41/gnome-music-41.0.tar.xz",
-          "sha256": "69b13567a87dc77dcf0c926d71d0fa2ebfa5a97f37817828df71d8a1b0129fd2"
+          "url": "https://download.gnome.org/sources/gnome-music/42/gnome-music-42.0.tar.xz",
+          "sha256": "9d68198f9852bde0f834584b96a812897d310cb71728b6a4f098bcb29b19c5d0"
         }
       ]
     }
