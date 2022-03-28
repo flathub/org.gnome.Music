@@ -47,17 +47,13 @@
       "name": "gst-python",
       "buildsystem": "meson",
       "config-opts": [
-            "-Dpygi-overrides-dir=/app/lib/python3.8/site-packages/gi/overrides/"
+            "-Dpygi-overrides-dir=/app/lib/python3.9/site-packages/gi/overrides/"
       ],
       "sources": [
         {
           "type": "git",
-          "branch": "1.16.2",
+          "branch": "1.18.6",
           "url": "https://gitlab.freedesktop.org/gstreamer/gst-python.git"
-        },
-        {
-          "type": "patch",
-          "path": "gst-python.patch"
         }
       ]
     },
