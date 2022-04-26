@@ -52,7 +52,7 @@
       "sources": [
         {
           "type": "git",
-          "branch": "1.18.6",
+          "commit": "1.18.6",
           "url": "https://gitlab.freedesktop.org/gstreamer/gst-python.git"
         }
       ]
