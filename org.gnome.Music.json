@@ -38,8 +38,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://download.gnome.org/sources/libmediaart/1.9/libmediaart-1.9.5.tar.xz",
-          "sha256": "07def5a42c482ae71d3e1f77a4d0fdc337f74226059a65284d6d5a241f0e9cd6"
+          "url": "https://download.gnome.org/sources/libmediaart/1.9/libmediaart-1.9.6.tar.xz",
+          "sha256": "c3bc5025d7db380587f9c8eb800c611f6b5a16d6b4b78fcff93f62876a677f17"
         }
       ]
     },
@@ -71,8 +71,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://download.gnome.org/sources/tracker-miners/3.3/tracker-miners-3.3.0.tar.xz",
-          "sha256": "8b387debb774061c06adfb267a0e0e0f3d21799371bf01d056495ab9b8dd9417"
+          "url": "https://download.gnome.org/sources/tracker-miners/3.3/tracker-miners-3.3.1.tar.xz",
+          "sha256": "3eddc6d272c02969fa4c2c15dfad0c49d76d021f1a27ec708b69be8025353c94"
         }
       ]
     },
@@ -88,8 +88,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://download.gnome.org/sources/gnome-online-accounts/3.40/gnome-online-accounts-3.40.1.tar.xz",
-          "sha256": "955a03128d0e87855d34d7c534e088f6286ed7ac01baa4ef824ef42a2cb39aad"
+          "url": "https://download.gnome.org/sources/gnome-online-accounts/3.44/gnome-online-accounts-3.44.0.tar.xz",
+          "sha256": "381d5d4106f435b6f87786aa049be784774e15996adcc02789807afc87ea7342"
         }
       ]
     },
@@ -164,8 +164,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://download.gnome.org/sources/gnome-music/42/gnome-music-42.0.tar.xz",
-          "sha256": "9d68198f9852bde0f834584b96a812897d310cb71728b6a4f098bcb29b19c5d0"
+          "url": "https://download.gnome.org/sources/gnome-music/42/gnome-music-42.1.tar.xz",
+          "sha256": "c7747fa6a86b56b18ad6ff950ff901e59ee7fac11c68b2a6727af86eaeed8270"
         }
       ]
     }
