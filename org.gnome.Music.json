@@ -39,7 +39,11 @@
         {
           "type": "archive",
           "url": "https://download.gnome.org/sources/libmediaart/1.9/libmediaart-1.9.6.tar.xz",
-          "sha256": "c3bc5025d7db380587f9c8eb800c611f6b5a16d6b4b78fcff93f62876a677f17"
+          "sha256": "c3bc5025d7db380587f9c8eb800c611f6b5a16d6b4b78fcff93f62876a677f17",
+          "x-checker-data": {
+            "type": "gnome",
+            "name": "libmediaart"
+          }
         }
       ]
     },
@@ -72,7 +76,11 @@
         {
           "type": "archive",
           "url": "https://download.gnome.org/sources/tracker-miners/3.3/tracker-miners-3.3.1.tar.xz",
-          "sha256": "3eddc6d272c02969fa4c2c15dfad0c49d76d021f1a27ec708b69be8025353c94"
+          "sha256": "3eddc6d272c02969fa4c2c15dfad0c49d76d021f1a27ec708b69be8025353c94",
+          "x-checker-data": {
+            "type": "gnome",
+            "name": "tracker-miners"
+          }
         }
       ]
     },
@@ -89,7 +97,11 @@
         {
           "type": "archive",
           "url": "https://download.gnome.org/sources/gnome-online-accounts/3.44/gnome-online-accounts-3.44.0.tar.xz",
-          "sha256": "381d5d4106f435b6f87786aa049be784774e15996adcc02789807afc87ea7342"
+          "sha256": "381d5d4106f435b6f87786aa049be784774e15996adcc02789807afc87ea7342",
+          "x-checker-data": {
+            "type": "gnome",
+            "name": "gnome-online-accounts"
+          }
         }
       ]
     },
@@ -103,7 +115,11 @@
         {
           "type": "archive",
           "url": "https://download.gnome.org/sources/totem-pl-parser/3.26/totem-pl-parser-3.26.6.tar.xz",
-          "sha256": "c0df0f68d5cf9d7da43c81c7f13f11158358368f98c22d47722f3bd04bd3ac1c"
+          "sha256": "c0df0f68d5cf9d7da43c81c7f13f11158358368f98c22d47722f3bd04bd3ac1c",
+          "x-checker-data": {
+            "type": "gnome",
+            "name": "totem-pl-parser"
+          }
         }
       ],
       "cleanup": [
@@ -118,7 +134,11 @@
         {
           "type": "archive",
           "url": "https://download.gnome.org/sources/grilo/0.3/grilo-0.3.14.tar.xz",
-          "sha256": "0369d0b00bb0f59ba5f7aea8cfc665f38df14a5b4182d28c7c1e2cd15b518743"
+          "sha256": "0369d0b00bb0f59ba5f7aea8cfc665f38df14a5b4182d28c7c1e2cd15b518743",
+          "x-checker-data": {
+            "type": "gnome",
+            "name": "grilo"
+          }
         }
       ],
       "cleanup": [
@@ -151,7 +171,11 @@
         {
           "type": "archive",
           "url": "https://download.gnome.org/sources/grilo-plugins/0.3/grilo-plugins-0.3.14.tar.xz",
-          "sha256": "686844b34ec73b24931ff6cc4f6033f0072947a6db60acdc7fb3eaf157a581c8"
+          "sha256": "686844b34ec73b24931ff6cc4f6033f0072947a6db60acdc7fb3eaf157a581c8",
+          "x-checker-data": {
+            "type": "gnome",
+            "name": "grilo-plugins"
+          }
         }
       ],
       "cleanup": [
@@ -165,7 +189,12 @@
         {
           "type": "archive",
           "url": "https://download.gnome.org/sources/gnome-music/42/gnome-music-42.1.tar.xz",
-          "sha256": "c7747fa6a86b56b18ad6ff950ff901e59ee7fac11c68b2a6727af86eaeed8270"
+          "sha256": "c7747fa6a86b56b18ad6ff950ff901e59ee7fac11c68b2a6727af86eaeed8270",
+          "x-checker-data": {
+            "type": "gnome",
+            "name": "gnome-music",
+            "is-important": true
+          }
         }
       ]
     }
