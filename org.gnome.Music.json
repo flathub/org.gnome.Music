@@ -120,9 +120,6 @@
         },
         {
             "name": "totem-pl-parser",
-            "config-opts": [
-                "-Ddisable-gmime-i-know-what-im-doing=true"
-            ],
             "buildsystem": "meson",
             "sources": [
                 {
