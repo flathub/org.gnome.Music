@@ -51,14 +51,16 @@
         {
             "name": "gst-python",
             "buildsystem": "meson",
+            "subdir": "subprojects/gst-python",
             "config-opts": [
-                "-Dpygi-overrides-dir=/app/lib/python3.9/site-packages/gi/overrides/"
+                "-Dpygi-overrides-dir=/app/lib/python3.10/site-packages/gi/overrides/"
             ],
             "sources": [
                 {
                     "type": "git",
-                    "commit": "1.18.6",
-                    "url": "https://gitlab.freedesktop.org/gstreamer/gst-python.git"
+                    "disable-submodules": true,
+                    "url": "https://gitlab.freedesktop.org/gstreamer/gstreamer.git",
+                    "tag": "1.20.6"
                 }
             ]
         },
