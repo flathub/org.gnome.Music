@@ -39,10 +39,11 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/libmediaart/0.6/libmediaart-0.6.0.tar.xz",
-                    "sha256": "bb70add2054ef26fc5bcdf2e96b0b25bd5a89c5601aac7f0e40df92a10d404ab",
+                    "url": "https://download.gnome.org/sources/libmediaart/1.9/libmediaart-1.9.6.tar.xz",
+                    "sha256": "c3bc5025d7db380587f9c8eb800c611f6b5a16d6b4b78fcff93f62876a677f17",
                     "x-checker-data": {
                         "type": "gnome",
+                        "stable-only": false,
                         "name": "libmediaart"
                     }
                 }
@@ -81,10 +82,11 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/tracker-miners/3.4/tracker-miners-3.4.3.tar.xz",
-                    "sha256": "8e4f3976472641b648d0f8f20debae1b1629ca5b560b8616e117d29d756fbeeb",
+                    "url": "https://download.gnome.org/sources/tracker-miners/3.5/tracker-miners-3.5.0.tar.xz",
+                    "sha256": "17966603dc432a98526b490586a48acd7f9f59935f7895dfc51729a46a6901a3",
                     "x-checker-data": {
                         "type": "gnome",
+                        "stable-only": false,
                         "name": "tracker-miners"
                     }
                 }
@@ -139,10 +141,11 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/grilo/0.2/grilo-0.2.15.tar.xz",
-                    "sha256": "6f5d2583250a68e76d281edaa08adb880d5a78ed46f9ecd22ae4715f1dd66815",
+                    "url": "https://download.gnome.org/sources/grilo/0.3/grilo-0.3.15.tar.xz",
+                    "sha256": "f352acf73665669934270636fede66b52da6801fe20f638c4048ab2678577b2d",
                     "x-checker-data": {
                         "type": "gnome",
+                        "stable-only": false,
                         "name": "grilo"
                     }
                 }
@@ -176,8 +179,9 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/grilo-plugins/0.2/grilo-plugins-0.2.17.tar.xz",
-                    "sha256": "337669098cddf64a84fa9398aa1d7f994fea84bc5f7f1b348e1288f135713781",
+                    "url": "https://download.gnome.org/sources/grilo-plugins/0.3/grilo-plugins-0.3.15.tar.xz",
+                    "stable-only": false,
+                    "sha256": "8518c3d954f93095d955624a044ce16a7345532f811d299dbfa1e114cfebab33",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "grilo-plugins"
