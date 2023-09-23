@@ -1,7 +1,7 @@
 {
     "id": "org.gnome.Music",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "44",
+    "runtime-version": "45",
     "sdk": "org.gnome.Sdk",
     "command": "gnome-music",
     "finish-args": [
@@ -55,14 +55,14 @@
             "buildsystem": "meson",
             "subdir": "subprojects/gst-python",
             "config-opts": [
-                "-Dpygi-overrides-dir=/app/lib/python3.10/site-packages/gi/overrides/"
+                "-Dpygi-overrides-dir=/app/lib/python3.11/site-packages/gi/overrides/"
             ],
             "sources": [
                 {
                     "type": "git",
                     "disable-submodules": true,
                     "url": "https://gitlab.freedesktop.org/gstreamer/gstreamer.git",
-                    "tag": "1.20.6"
+                    "tag": "1.22.6"
                 }
             ]
         },
@@ -83,8 +83,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/tracker-miners/3.5/tracker-miners-3.5.0.tar.xz",
-                    "sha256": "17966603dc432a98526b490586a48acd7f9f59935f7895dfc51729a46a6901a3",
+                    "url": "https://download.gnome.org/sources/tracker-miners/3.6/tracker-miners-3.6.0.tar.xz",
+                    "sha256": "c2ed9f6b0410195863b84c7b5467c5bc1255e96d658741192b5e92568a3bebd0",
                     "x-checker-data": {
                         "type": "gnome",
                         "stable-only": false,
@@ -143,8 +143,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/grilo/0.3/grilo-0.3.15.tar.xz",
-                    "sha256": "f352acf73665669934270636fede66b52da6801fe20f638c4048ab2678577b2d",
+                    "url": "https://download.gnome.org/sources/grilo/0.3/grilo-0.3.16.tar.xz",
+                    "sha256": "884580e8c5ece280df23aa63ff5234b7d48988a404df7d6bfccd1e77b473bd96",
                     "x-checker-data": {
                         "type": "gnome",
                         "stable-only": false,
@@ -181,11 +181,11 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/grilo-plugins/0.3/grilo-plugins-0.3.15.tar.xz",
-                    "stable-only": false,
-                    "sha256": "8518c3d954f93095d955624a044ce16a7345532f811d299dbfa1e114cfebab33",
+                    "url": "https://download.gnome.org/sources/grilo-plugins/0.3/grilo-plugins-0.3.16.tar.xz",
+                    "sha256": "fe6f4dbe586c6b8ba2406394e202f22d009d642a96eb3a54f32f6a21d084cdcb",
                     "x-checker-data": {
                         "type": "gnome",
+                        "stable-only": false,
                         "name": "grilo-plugins"
                     }
                 }
@@ -200,8 +200,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-music/44/gnome-music-44.0.tar.xz",
-                    "sha256": "9bd1aac9572e62472024a6950d83ae6f286be33cd9c777f3d44fa16d038f1d51",
+                    "url": "https://download.gnome.org/sources/gnome-music/45/gnome-music-45.0.tar.xz",
+                    "sha256": "33e770166226a74537d4c10b1538efa8842494ffe9bf2c90a16cab98ab997bdf",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "gnome-music",
