@@ -182,10 +182,10 @@
                 {
                     "type": "archive",
                     "url": "https://download.gnome.org/sources/grilo-plugins/0.2/grilo-plugins-0.2.17.tar.xz",
-                    "stable-only": false,
                     "sha256": "337669098cddf64a84fa9398aa1d7f994fea84bc5f7f1b348e1288f135713781",
                     "x-checker-data": {
                         "type": "gnome",
+                        "stable-only": false,
                         "name": "grilo-plugins"
                     }
                 }
