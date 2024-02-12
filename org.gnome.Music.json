@@ -87,7 +87,6 @@
                     "sha256": "c2ed9f6b0410195863b84c7b5467c5bc1255e96d658741192b5e92568a3bebd0",
                     "x-checker-data": {
                         "type": "gnome",
-                        "stable-only": false,
                         "name": "tracker-miners"
                     }
                 }
