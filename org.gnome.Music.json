@@ -83,8 +83,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/tracker-miners/3.6/tracker-miners-3.6.0.tar.xz",
-                    "sha256": "c2ed9f6b0410195863b84c7b5467c5bc1255e96d658741192b5e92568a3bebd0",
+                    "url": "https://download.gnome.org/sources/tracker-miners/3.6/tracker-miners-3.6.2.tar.xz",
+                    "sha256": "0ad722f3d532c21d757cf488f942960679ea8f457925efa97656ed4c9e9ba4ff",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "tracker-miners"
@@ -108,8 +108,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-online-accounts/3.48/gnome-online-accounts-3.48.0.tar.xz",
-                    "sha256": "418bb9fcffdbd72a98205ad365137617fc1e3551a54de74f6a98d45d266175bf",
+                    "url": "https://download.gnome.org/sources/gnome-online-accounts/3.48/gnome-online-accounts-3.48.1.tar.xz",
+                    "sha256": "3ea0c71084bf595cce5caa37ceff2e853d0ec9644bb01fd4643300adb9517f8a",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "gnome-online-accounts"
@@ -199,8 +199,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-music/45/gnome-music-45.0.tar.xz",
-                    "sha256": "33e770166226a74537d4c10b1538efa8842494ffe9bf2c90a16cab98ab997bdf",
+                    "url": "https://download.gnome.org/sources/gnome-music/45/gnome-music-45.1.tar.xz",
+                    "sha256": "95959cdb802444048d50a1a91c42db8b25165a0a68533bc03895eb372c4dde0b",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "gnome-music",
