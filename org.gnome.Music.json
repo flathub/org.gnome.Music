@@ -1,7 +1,7 @@
 {
     "id": "org.gnome.Music",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "45",
+    "runtime-version": "46",
     "sdk": "org.gnome.Sdk",
     "command": "gnome-music",
     "finish-args": [
@@ -62,7 +62,7 @@
                     "type": "git",
                     "disable-submodules": true,
                     "url": "https://gitlab.freedesktop.org/gstreamer/gstreamer.git",
-                    "tag": "1.22.6"
+                    "tag": "1.22.10"
                 }
             ]
         },
@@ -108,8 +108,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-online-accounts/3.48/gnome-online-accounts-3.48.1.tar.xz",
-                    "sha256": "3ea0c71084bf595cce5caa37ceff2e853d0ec9644bb01fd4643300adb9517f8a",
+                    "url": "https://download.gnome.org/sources/gnome-online-accounts/3.50/gnome-online-accounts-3.50.0.tar.xz",
+                    "sha256": "b0f64f0dcfbb8885a3a759e1c9de7fb204adb3ce6bd32c30bcf52d5533c06d4e",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "gnome-online-accounts"
@@ -199,8 +199,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-music/45/gnome-music-45.1.tar.xz",
-                    "sha256": "95959cdb802444048d50a1a91c42db8b25165a0a68533bc03895eb372c4dde0b",
+                    "url": "https://download.gnome.org/sources/gnome-music/46/gnome-music-46.0.tar.xz",
+                    "sha256": "a450d5ce016892f6af2f8ab71fc7c394382e22c7b620ba92a6e15cf66bc5ec5f",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "gnome-music",
