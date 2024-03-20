@@ -10,10 +10,7 @@
         "--socket=fallback-x11",
         "--share=network",
         "--socket=wayland",
-        "--talk-name=org.gnome.OnlineAccounts",
-        "--talk-name=org.gnome.ControlCenter",
         "--talk-name=org.freedesktop.Tracker3.Writeback",
-        "--talk-name=org.gnome.Settings",
         "--socket=pulseaudio",
         "--filesystem=xdg-music",
         "--system-talk-name=org.freedesktop.login1",
@@ -88,31 +85,6 @@
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "tracker-miners"
-                    }
-                }
-            ]
-        },
-        {
-            "name": "gnome-online-accounts",
-            "buildsystem": "meson",
-            "config-opts": [
-                "-Dgoabackend=false",
-                "-Dvapi=false",
-                "-Dexchange=false",
-                "-Dgoogle=false",
-                "-Dimap_smtp=false",
-                "-Dkerberos=false",
-                "-Downcloud=false",
-                "-Dwindows_live=false"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-online-accounts/3.50/gnome-online-accounts-3.50.0.tar.xz",
-                    "sha256": "b0f64f0dcfbb8885a3a759e1c9de7fb204adb3ce6bd32c30bcf52d5533c06d4e",
-                    "x-checker-data": {
-                        "type": "gnome",
-                        "name": "gnome-online-accounts"
                     }
                 }
             ]
