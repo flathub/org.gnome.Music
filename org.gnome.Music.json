@@ -71,6 +71,7 @@
                 "-Ddefault_index_single_dirs=",
                 "-Ddefault_index_recursive_dirs=&MUSIC",
                 "-Ddomain_prefix=org.gnome.Music",
+                "-Dlandlock=disabled",
                 "-Dman=false",
                 "-Dminer_fs=true",
                 "-Dminer_fs_cache_location=$XDG_CACHE_HOME/gnome-music/miner/files",
@@ -80,8 +81,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/tracker-miners/3.6/tracker-miners-3.6.2.tar.xz",
-                    "sha256": "0ad722f3d532c21d757cf488f942960679ea8f457925efa97656ed4c9e9ba4ff",
+                    "url": "https://download.gnome.org/sources/tracker-miners/3.7/tracker-miners-3.7.0.tar.xz",
+                    "sha256": "74e796c1625094a8a2175993c7907281e97ab6e002578e846b8f4ca44e36bf61",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "tracker-miners"
