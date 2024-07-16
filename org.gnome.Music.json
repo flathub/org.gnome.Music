@@ -81,8 +81,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/tracker-miners/3.7/tracker-miners-3.7.0.tar.xz",
-                    "sha256": "74e796c1625094a8a2175993c7907281e97ab6e002578e846b8f4ca44e36bf61",
+                    "url": "https://download.gnome.org/sources/tracker-miners/3.6/tracker-miners-3.6.2.tar.xz",
+                    "sha256": "0ad722f3d532c21d757cf488f942960679ea8f457925efa97656ed4c9e9ba4ff",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "tracker-miners"
@@ -172,8 +172,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-music/46/gnome-music-46.0.tar.xz",
-                    "sha256": "a450d5ce016892f6af2f8ab71fc7c394382e22c7b620ba92a6e15cf66bc5ec5f",
+                    "url": "https://download.gnome.org/sources/gnome-music/46/gnome-music-46.1.tar.xz",
+                    "sha256": "11be2d6c289be4dc433b0c4fb59a3dac3bed01c7f5a28aee6a544197a353bffd",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "gnome-music",
