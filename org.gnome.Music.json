@@ -1,7 +1,7 @@
 {
     "id": "org.gnome.Music",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "46",
+    "runtime-version": "47",
     "sdk": "org.gnome.Sdk",
     "command": "gnome-music",
     "finish-args": [
@@ -52,21 +52,23 @@
             "buildsystem": "meson",
             "subdir": "subprojects/gst-python",
             "config-opts": [
-                "-Dpygi-overrides-dir=/app/lib/python3.11/site-packages/gi/overrides/"
+                "-Dpygi-overrides-dir=/app/lib/python3.12/site-packages/gi/overrides/"
             ],
             "sources": [
                 {
                     "type": "git",
                     "disable-submodules": true,
                     "url": "https://gitlab.freedesktop.org/gstreamer/gstreamer.git",
-                    "tag": "1.22.10"
+                    "tag": "1.24.8"
                 }
             ]
         },
         {
-            "name": "tracker-miners",
+            "name": "localsearch",
             "buildsystem": "meson",
             "config-opts": [
+                "-Dfunctional_tests=false",
+                "-Dsandbox_tests=false",
                 "-Dbattery_detection=none",
                 "-Ddefault_index_single_dirs=",
                 "-Ddefault_index_recursive_dirs=&MUSIC",
@@ -81,11 +83,12 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/tracker-miners/3.6/tracker-miners-3.6.2.tar.xz",
-                    "sha256": "0ad722f3d532c21d757cf488f942960679ea8f457925efa97656ed4c9e9ba4ff",
+                    "url": "https://download.gnome.org/sources/localsearch/3.8/localsearch-3.8.0.tar.xz",
+                    "sha256": "e4e83a1daebb5263915b45b719731e3f7041d959cbd637ea29afbe910c92bbf9",
                     "x-checker-data": {
                         "type": "gnome",
-                        "name": "tracker-miners"
+                        "stable-only": false,
+                        "name": "localsearch"
                     }
                 }
             ]
