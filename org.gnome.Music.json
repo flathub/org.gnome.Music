@@ -41,7 +41,6 @@
                     "sha256": "c3bc5025d7db380587f9c8eb800c611f6b5a16d6b4b78fcff93f62876a677f17",
                     "x-checker-data": {
                         "type": "gnome",
-                        "stable-only": false,
                         "name": "libmediaart"
                     }
                 }
@@ -87,7 +86,6 @@
                     "sha256": "a7b24a4f07805df7543a4dd023684fcde5ee699ca00eb5b09123a049d3aeccd8",
                     "x-checker-data": {
                         "type": "gnome",
-                        "stable-only": false,
                         "name": "localsearch"
                     }
                 }
@@ -122,7 +120,6 @@
                     "sha256": "884580e8c5ece280df23aa63ff5234b7d48988a404df7d6bfccd1e77b473bd96",
                     "x-checker-data": {
                         "type": "gnome",
-                        "stable-only": false,
                         "name": "grilo"
                     }
                 }
@@ -160,7 +157,6 @@
                     "sha256": "fe6f4dbe586c6b8ba2406394e202f22d009d642a96eb3a54f32f6a21d084cdcb",
                     "x-checker-data": {
                         "type": "gnome",
-                        "stable-only": false,
                         "name": "grilo-plugins"
                     }
                 }
