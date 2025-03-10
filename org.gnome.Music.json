@@ -37,8 +37,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/libmediaart/1.9/libmediaart-1.9.6.tar.xz",
-                    "sha256": "c3bc5025d7db380587f9c8eb800c611f6b5a16d6b4b78fcff93f62876a677f17",
+                    "url": "https://download.gnome.org/sources/libmediaart/1.9/libmediaart-1.9.7.tar.xz",
+                    "sha256": "2b43dd9f54f0d8d0b89e2addb83341ab06d7b98cb1b2e704383584af9c560f6b",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "libmediaart"
@@ -82,8 +82,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/localsearch/3.8/localsearch-3.8.1.tar.xz",
-                    "sha256": "a7b24a4f07805df7543a4dd023684fcde5ee699ca00eb5b09123a049d3aeccd8",
+                    "url": "https://download.gnome.org/sources/localsearch/3.9/localsearch-3.9.0.tar.xz",
+                    "sha256": "d42f408dc3fb28fe54f5a9abbf5f1decf5818db9c2e9ec51c09464bdfd0c14b9",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "localsearch"
@@ -171,8 +171,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-music/47/gnome-music-47.1.tar.xz",
-                    "sha256": "666f175f560a1ad9cbab61ea0f30393ca2fed2946ba46e5c00eaea117dbc70d0",
+                    "url": "https://download.gnome.org/sources/gnome-music/48/gnome-music-48.0.tar.xz",
+                    "sha256": "8cdaacd05262b63bb1608a25acad516e892c332232357cb9b7f68f2cfb86d66e",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "gnome-music",
