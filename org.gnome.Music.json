@@ -58,7 +58,7 @@
                     "type": "git",
                     "disable-submodules": true,
                     "url": "https://gitlab.freedesktop.org/gstreamer/gstreamer.git",
-                    "tag": "1.24.8"
+                    "tag": "1.24.13"
                 }
             ]
         },
@@ -110,13 +110,33 @@
             ]
         },
         {
+            "name" : "librest",
+            "buildsystem": "meson",
+            "config-opts": [
+                "-Dgtk_doc=false",
+                "-Dexamples=false",
+                "-Dsoup2=false"
+            ],
+            "sources" : [
+                {
+                    "type" : "archive",
+                    "url" : "https://download.gnome.org/sources/librest/0.10/librest-0.10.2.tar.xz",
+                    "sha256": "7b6cb912bb3a22cfa7dcf005925dcb62883024db0c09099486e7d6851185c9b8",
+                    "x-checker-data": {
+                        "type": "gnome",
+                        "name": "librest"
+                    }
+                }
+            ]
+        },
+        {
             "name": "grilo",
             "buildsystem": "meson",
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/grilo/0.3/grilo-0.3.16.tar.xz",
-                    "sha256": "884580e8c5ece280df23aa63ff5234b7d48988a404df7d6bfccd1e77b473bd96",
+                    "url": "https://download.gnome.org/sources/grilo/0.3/grilo-0.3.19.tar.xz",
+                    "sha256": "0869c81d19ab139c667d79567c14ddcb6cb5cbfc0108d04cade287eb29536706",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "grilo"
@@ -141,7 +161,6 @@
                 "-Denable-local-metadata=no",
                 "-Denable-lua-factory=yes",
                 "-Denable-metadata-store=no",
-                "-Denable-opensubtitles=no",
                 "-Denable-optical-media=no",
                 "-Denable-podcasts=no",
                 "-Denable-thetvdb=no",
@@ -152,8 +171,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/grilo-plugins/0.3/grilo-plugins-0.3.16.tar.xz",
-                    "sha256": "fe6f4dbe586c6b8ba2406394e202f22d009d642a96eb3a54f32f6a21d084cdcb",
+                    "url": "https://download.gnome.org/sources/grilo-plugins/0.3/grilo-plugins-0.3.18.tar.xz",
+                    "sha256": "8e3ce74ee717c3c322d0cb0f8df26bb0914028a5d016e28055ffb49cc9a46c5e",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "grilo-plugins"
@@ -170,8 +189,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-music/48/gnome-music-48.0.tar.xz",
-                    "sha256": "8cdaacd05262b63bb1608a25acad516e892c332232357cb9b7f68f2cfb86d66e",
+                    "url": "https://download.gnome.org/sources/gnome-music/48/gnome-music-48.1.tar.xz",
+                    "sha256": "40bf57302da5db336b688552edd014dbfbe2b445041966007294c6c2b0c078de",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "gnome-music",
