@@ -1,7 +1,7 @@
 {
     "id": "org.gnome.Music",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "48",
+    "runtime-version": "49",
     "sdk": "org.gnome.Sdk",
     "command": "gnome-music",
     "finish-args": [
@@ -51,7 +51,7 @@
             "buildsystem": "meson",
             "subdir": "subprojects/gst-python",
             "config-opts": [
-                "-Dpygi-overrides-dir=/app/lib/python3.12/site-packages/gi/overrides/"
+                "-Dpygi-overrides-dir=/app/lib/python3.13/site-packages/gi/overrides/"
             ],
             "sources": [
                 {
@@ -72,17 +72,19 @@
                 "-Ddefault_index_single_dirs=",
                 "-Ddefault_index_recursive_dirs=&MUSIC",
                 "-Ddomain_prefix=org.gnome.Music",
+                "-Dfunctional_tests=false",
                 "-Dlandlock=disabled",
                 "-Dman=false",
                 "-Dminer_fs=true",
                 "-Dminer_fs_cache_location=$XDG_CACHE_HOME/gnome-music/miner/files",
+                "-Dsandbox_tests=false",
                 "-Dsystemd_user_services=false"
             ],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/localsearch/3.9/localsearch-3.9.0.tar.xz",
-                    "sha256": "d42f408dc3fb28fe54f5a9abbf5f1decf5818db9c2e9ec51c09464bdfd0c14b9",
+                    "url": "https://download.gnome.org/sources/localsearch/3.10/localsearch-3.10.0.tar.xz",
+                    "sha256": "58d66ea44aee1649c8d981f934373b83e1ab4a4a1a84ba0304f5af391e7e0080",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "localsearch"
@@ -110,17 +112,17 @@
             ]
         },
         {
-            "name" : "librest",
+            "name": "librest",
             "buildsystem": "meson",
             "config-opts": [
                 "-Dgtk_doc=false",
                 "-Dexamples=false",
                 "-Dsoup2=false"
             ],
-            "sources" : [
+            "sources": [
                 {
-                    "type" : "archive",
-                    "url" : "https://download.gnome.org/sources/librest/0.10/librest-0.10.2.tar.xz",
+                    "type": "archive",
+                    "url": "https://download.gnome.org/sources/librest/0.10/librest-0.10.2.tar.xz",
                     "sha256": "7b6cb912bb3a22cfa7dcf005925dcb62883024db0c09099486e7d6851185c9b8",
                     "x-checker-data": {
                         "type": "gnome",
@@ -189,8 +191,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-music/48/gnome-music-48.1.tar.xz",
-                    "sha256": "40bf57302da5db336b688552edd014dbfbe2b445041966007294c6c2b0c078de",
+                    "url": "https://download.gnome.org/sources/gnome-music/49/gnome-music-49.0.2.tar.xz",
+                    "sha256": "9b97494200bbaa87b0ed8849255430d56c158d51b4dea7be6889f77561a954a7",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "gnome-music",
