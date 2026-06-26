@@ -66,8 +66,6 @@
             "name": "localsearch",
             "buildsystem": "meson",
             "config-opts": [
-                "-Dfunctional_tests=false",
-                "-Dsandbox_tests=false",
                 "-Dbattery_detection=none",
                 "-Ddefault_index_single_dirs=",
                 "-Ddefault_index_recursive_dirs=&MUSIC",
