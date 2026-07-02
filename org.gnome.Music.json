@@ -1,7 +1,7 @@
 {
     "id": "org.gnome.Music",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "49",
+    "runtime-version": "50",
     "sdk": "org.gnome.Sdk",
     "command": "gnome-music",
     "finish-args": [
@@ -58,6 +58,7 @@
                     "type": "git",
                     "disable-submodules": true,
                     "url": "https://gitlab.freedesktop.org/gstreamer/gstreamer.git",
+                    "commit": "0a7d7071207d40cc003f6cd9f2f123f759fdfce1",
                     "tag": "1.24.13"
                 }
             ]
@@ -66,25 +67,28 @@
             "name": "localsearch",
             "buildsystem": "meson",
             "config-opts": [
-                "-Dfunctional_tests=false",
-                "-Dsandbox_tests=false",
                 "-Dbattery_detection=none",
                 "-Ddefault_index_single_dirs=",
                 "-Ddefault_index_recursive_dirs=&MUSIC",
                 "-Ddomain_prefix=org.gnome.Music",
+                "-Dexif=disabled",
                 "-Dfunctional_tests=false",
+                "-Diptc=disabled",
                 "-Dlandlock=disabled",
                 "-Dman=false",
                 "-Dminer_fs=true",
                 "-Dminer_fs_cache_location=$XDG_CACHE_HOME/gnome-music/miner/files",
+                "-Draw=disabled",
                 "-Dsandbox_tests=false",
-                "-Dsystemd_user_services=false"
+                "-Dsystemd_user_services=false",
+                "-Dtiff=disabled",
+                "-Dwebp=disabled"
             ],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/localsearch/3.10/localsearch-3.10.0.tar.xz",
-                    "sha256": "58d66ea44aee1649c8d981f934373b83e1ab4a4a1a84ba0304f5af391e7e0080",
+                    "url": "https://download.gnome.org/sources/localsearch/3.11/localsearch-3.11.1.tar.xz",
+                    "sha256": "7b39a6c28a8acf2b172f15b2fb5ee7c7a3764c447c2f4a14caa239b7ebe61942",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "localsearch"
@@ -98,8 +102,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/totem-pl-parser/3.26/totem-pl-parser-3.26.6.tar.xz",
-                    "sha256": "c0df0f68d5cf9d7da43c81c7f13f11158358368f98c22d47722f3bd04bd3ac1c",
+                    "url": "https://download.gnome.org/sources/totem-pl-parser/3.26/totem-pl-parser-3.26.7.tar.xz",
+                    "sha256": "60d517c1acabe54ae337f64451264fc76730696eaae26b5480fb37166689b5f3",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "totem-pl-parser"
@@ -191,8 +195,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-music/49/gnome-music-49.1.tar.xz",
-                    "sha256": "ba881ae0b55e34e6269fd2d3df8d8bfa3c5ec7e37bac8945aec78b7ff207bc67",
+                    "url": "https://download.gnome.org/sources/gnome-music/50/gnome-music-50.0.tar.xz",
+                    "sha256": "c72890ca7e5809cefeb876b01199f8b197146b5c25e9d5745301a284c0f3cdaa",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "gnome-music",
